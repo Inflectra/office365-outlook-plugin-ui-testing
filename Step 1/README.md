@@ -1,0 +1,1 @@
+Empty cross-browser test. Browser profile is set to `Internet Explorer HTML`.

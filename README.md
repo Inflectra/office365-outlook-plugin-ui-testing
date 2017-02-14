@@ -13,20 +13,20 @@ This demo shows several important features of Rapise:
 
 ## Demo Steps
 
-### Creating Folder and Test Structure
+### Step 1: Creating Folder and Test Structure
 During this step we create necessary tests and files.
 
-### Test Initialization/Finalization
+### Step 2: Test Initialization/Finalization
 - Implementation of test initialization: seeding data (emails) into Exchange mailbox. 
 - Implementation of test finalization: removing test emails from the mailbox.
 
-### Making the Test
+### Step 3: Making the Test
 Recording the test in Internet Explorer. Adjusting the test to enable execution in FF, Chrome and Outlook for Windows.
 
-### Test Execution
+### Step 4: Test Execution
 Execution of the test in IE, FF, Chrome and Outlook for Windows.
 
-### Results
+### Step 5: Results
 Analysis of the results.
 
 

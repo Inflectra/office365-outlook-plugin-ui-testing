@@ -1,0 +1,1 @@
+During this step we implement SOAP API calls to create/delete emails in Exchange mailbox.
