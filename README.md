@@ -13,7 +13,7 @@ This demo shows several important features of Rapise:
 
 ## Demo Steps
 
-### Creaating Folder and Test Structure
+### Creating Folder and Test Structure
 During this step we create necessary tests and files.
 
 ### Test Initialization/Finalization
