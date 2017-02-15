@@ -25,6 +25,14 @@
     <FilterPath />
     <Groups>
       <TestGroup>
+        <Name>Reports</Name>
+        <IsFilterGroup>true</IsFilterGroup>
+        <FilterWildcard>*.trp</FilterWildcard>
+        <FilterPath>Reports</FilterPath>
+        <Groups />
+        <TestFiles />
+      </TestGroup>
+      <TestGroup>
         <Name>Scripts</Name>
         <IsFilterGroup>false</IsFilterGroup>
         <FilterWildcard>*.*</FilterWildcard>
@@ -40,10 +48,20 @@
           <TestFile>
             <Path>Office365PluginTest.user.js</Path>
           </TestFile>
+          <TestFile>
+            <Path>README.txt</Path>
+          </TestFile>
         </TestFiles>
       </TestGroup>
     </Groups>
-    <TestFiles />
+    <TestFiles>
+      <TestFile>
+        <Path>C:\Work\Inflectra\InflectraGitProjects\office365-outlook-plugin-ui-testing\Common.js</Path>
+      </TestFile>
+      <TestFile>
+        <Path>C:\Work\Inflectra\InflectraGitProjects\office365-outlook-plugin-ui-testing\Parameters.xlsx</Path>
+      </TestFile>
+    </TestFiles>
   </TestFiles>
   <CustomStrings />
   <TestParams>
