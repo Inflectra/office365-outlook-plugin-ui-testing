@@ -1,0 +1,1 @@
+Cross-browser test that opens an email in Office 365 mailbox and performs actions over the plugin.
