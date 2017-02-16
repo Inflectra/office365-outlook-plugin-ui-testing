@@ -13,7 +13,7 @@ function Test()
 	SelectEmail(0);
 
 	LaunchPlugin();
-	Common_VerifyPlugin();
+	VerifyPlugin();
 
 	LogoutFromMailbox();
 }

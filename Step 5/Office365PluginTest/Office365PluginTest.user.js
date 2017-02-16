@@ -64,3 +64,13 @@ function LaunchPlugin()
 	SeS('PLUGIN').DoClick();
 }
 
+/** @scenario VerifyPlugin*/
+function VerifyPlugin()
+{
+	Tester.Message("Verify Plugin");
+	Global.DoWaitFor('TextMiner', 30000);
+	if (Tester.Assert("Plugin panel opened", SeS('TextMiner') != null && SeS('TextMiner').GetNodeText() == "TextMiner"))
+	{
+		Common_VerifyPlugin();
+	}
+}
