@@ -25,6 +25,26 @@
     <FilterPath />
     <Groups>
       <TestGroup>
+        <Name>Emails</Name>
+        <IsFilterGroup>false</IsFilterGroup>
+        <FilterWildcard>*.*</FilterWildcard>
+        <FilterPath />
+        <Groups />
+        <TestFiles>
+          <TestFile>
+            <Path>Emails\Email1.txt</Path>
+          </TestFile>
+        </TestFiles>
+      </TestGroup>
+      <TestGroup>
+        <Name>Reports</Name>
+        <IsFilterGroup>true</IsFilterGroup>
+        <FilterWildcard>*.trp</FilterWildcard>
+        <FilterPath>Reports</FilterPath>
+        <Groups />
+        <TestFiles />
+      </TestGroup>
+      <TestGroup>
         <Name>Scripts</Name>
         <IsFilterGroup>false</IsFilterGroup>
         <FilterWildcard>*.*</FilterWildcard>
@@ -42,8 +62,27 @@
           </TestFile>
         </TestFiles>
       </TestGroup>
+      <TestGroup>
+        <Name>Services</Name>
+        <IsFilterGroup>false</IsFilterGroup>
+        <FilterWildcard>*.*</FilterWildcard>
+        <FilterPath />
+        <Groups />
+        <TestFiles>
+          <TestFile>
+            <Path>WebServiceEWS.soap</Path>
+          </TestFile>
+        </TestFiles>
+      </TestGroup>
     </Groups>
-    <TestFiles />
+    <TestFiles>
+      <TestFile>
+        <Path>C:\Work\Inflectra\InflectraGitProjects\office365-outlook-plugin-ui-testing\Common.js</Path>
+      </TestFile>
+      <TestFile>
+        <Path>C:\Work\Inflectra\InflectraGitProjects\office365-outlook-plugin-ui-testing\Parameters.xlsx</Path>
+      </TestFile>
+    </TestFiles>
   </TestFiles>
   <CustomStrings />
   <TestParams>
