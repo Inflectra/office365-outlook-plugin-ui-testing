@@ -8,25 +8,33 @@ This demo shows several important features of Rapise:
 
 - Cross-browser UI testng
 - Embedded browser UI testing
-- SOAP API testing
-- Subtests
+- SOAP API automation
+- Shared objects
+- Shared code
+- Parameters and data in spreadsheets
 
-## Demo Steps
 
-### Step 1: Creating Folder and Test Structure
-During this step we create necessary tests and files.
+## Demo Development Steps
 
-### Step 2: Test Initialization/Finalization
-- Implementation of test initialization: seeding data (emails) into Exchange mailbox. 
-- Implementation of test finalization: removing test emails from the mailbox.
+### Step 1: Empty Test
+Empty cross-browser test. Browser profile is set to `Internet Explorer HTML`.
 
-### Step 3: Making the Test
-Recording the test in Internet Explorer. Adjusting the test to enable execution in FF, Chrome and Outlook for Windows.
+### Step 2: SOAP API
+During this step we implement SOAP API calls to create/delete emails in Exchange mailbox.
 
-### Step 4: Test Execution
-Execution of the test in IE, FF, Chrome and Outlook for Windows.
+### Step 3: Browser Test
+Cross-browser test that opens an email in Office 365 mailbox, starts the plugin and checks the result.
 
-### Step 5: Results
-Analysis of the results.
+### Step 4: Outlook Test
+Launch Outlook, navigate to first email in the Inbox and start the plugin.
+
+### Step 5: Moving Common Objects from Browser Test to Shared Test
+Separate test is used to store plugin objects. Verification code moved to Common.js.
+
+### Step 6: Using Shared Objects in Outlook Test
+Objects created on the previous step are used to verify plugin state in Outlook test.
+
+### Step 7: Integration
+All pieces if the puzzle gathered together.
 
 
