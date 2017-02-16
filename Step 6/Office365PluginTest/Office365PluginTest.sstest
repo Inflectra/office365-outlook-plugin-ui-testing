@@ -56,10 +56,10 @@
     </Groups>
     <TestFiles>
       <TestFile>
-        <Path>C:\Work\Inflectra\InflectraGitProjects\office365-outlook-plugin-ui-testing\Common.js</Path>
+        <Path>..\..\Common.js</Path>
       </TestFile>
       <TestFile>
-        <Path>C:\Work\Inflectra\InflectraGitProjects\office365-outlook-plugin-ui-testing\Parameters.xlsx</Path>
+        <Path>..\..\Parameters.xlsx</Path>
       </TestFile>
     </TestFiles>
   </TestFiles>
