@@ -8,7 +8,10 @@ function Test()
 	Login();
 
 	OpenMailbox();
-	SelectEmail(1);
+	SelectEmail(0);
+
+	LaunchPlugin();
+	VerifyPlugin();
 
 	LogoutFromMailbox();
 }

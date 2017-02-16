@@ -5,18 +5,22 @@ eval(g_helper.Include("../../Common.js"));
 /** @scenario Login*/
 function Login()
 {
+	Tester.Message("Login");
 	var userName = Common_GetParameter("UserName");
 	var password = Common_GetParameter("Password");
 
 	SeS('User_account').DoSetText(userName);
 	Tester.Assert("Password.DoSetText(['**************'])", false!=SeS('Password')._DoSetText(password));
 	SeS('Sign_in').DoClick();
+	
+	Global.DoSleep(5000);
 	Global.DoWaitFor('Account');
 }
 
 /** @scenario Logout*/
 function Logout()
 {
+	Tester.Message("Logout");
 	SeS('Account').DoClick();
 	SeS('Sign_out').DoClick();
 }
@@ -24,14 +28,15 @@ function Logout()
 /** @scenario OpenMailbox*/
 function OpenMailbox()
 {
+	Tester.Message("Open Mailbox");
 	SeS('Mail').DoClick();
 	Global.DoWaitFor('EnailItem');
-
 }
 
 /** @scenario SelectEmail*/
 function SelectEmail(index)
 {
+	Tester.Message("Select Email");
 	var xpath = "//div[@id='_ariaId_24']";
 	xpath = xpath.replace("24", "" + (24 + index * 2));
 	SeS('EmailItem', {xpath:xpath}).DoClick();
@@ -40,6 +45,7 @@ function SelectEmail(index)
 /** @scenario LogoutFromMailbox*/
 function LogoutFromMailbox()
 {
+	Tester.Message("Logout");
 	SeS('USER').DoClick();
 	SeS('SIGNOUT').DoClick();
 	
@@ -48,5 +54,28 @@ function LogoutFromMailbox()
 	if (res)
 	{
 		Navigator.Close();
+	}
+}
+
+/** @scenario LaunchPlugin*/
+function LaunchPlugin()
+{
+	Tester.Message("Launch Plugin");
+	SeS('PLUGIN').DoClick();
+}
+
+/** @scenario VerifyPlugin*/
+function VerifyPlugin()
+{
+	Tester.Message("Verify Plugin");
+	Global.DoWaitFor('TextMiner', 30000);
+	if (Tester.Assert("Plugin panel opened", SeS('TextMiner') != null && SeS('TextMiner').GetNodeText() == "TextMiner"))
+	{
+		Global.DoWaitFor('ContactsCount', 30000);
+		if (Tester.Assert("2 contacts found", SeS('ContactsCount') != null && SeS('ContactsCount').GetNodeText() == "2"))
+		{
+			Tester.Assert("Sheldon found", SeS('Sheldon_Cooper') != null);
+			Tester.Assert("Leonard found", SeS('Leonard_Hofstadter') != null);
+		}
 	}
 }
