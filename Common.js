@@ -34,3 +34,27 @@ function Common_VerifyPlugin()
 	}
 }
 
+function Common_VerifyPluginParameterized()
+{
+	Global.DoWaitFor('ContactsCount', 30000);
+	if (Tester.Assert("2 contacts found", SeS('ContactsCount') != null && SeS('ContactsCount').GetNodeText() == "2"))
+	{
+		if (
+		Tester.Assert("Contact 1 found", SeS('Contact1') != null)
+		&&
+		Tester.Assert("Contact 2 found", SeS('Contact2') != null))
+		{
+			var contact1Name = Global.DoTrim(SeS('Contact1').GetNodeText());
+			var contact2Name = Global.DoTrim(SeS('Contact2').GetNodeText());
+			
+			Spreadsheet.DoAttach('../../Data.xlsx');
+			var expectedContact1Name = Spreadsheet.GetCell("Contact 1", 1);
+			var expectedContact2Name = Spreadsheet.GetCell("Contact 2", 1);
+			
+			Tester.AssertEqual("Contact is " + expectedContact1Name, expectedContact1Name, contact1Name);
+			Tester.AssertEqual("Contact is " + expectedContact2Name, expectedContact2Name, contact2Name);
+		}
+	}
+}
+
+

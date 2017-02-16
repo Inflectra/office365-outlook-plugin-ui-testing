@@ -6,7 +6,7 @@ function Test()
 	var pid = Global.DoLaunch('C:\\Program Files (x86)\\Microsoft Office\\root\\Office16\\Outlook.exe');
 
 	var userName = Common_GetParameter("UserName");
-	SeS('Mail_Folders')._DoClickNode(userName + ";Inbox");
+	SeS('Mail_Folders').DoClickNode(userName + ";Inbox");
 	var todayGroup = SeS('Group_By__Expanded__Date__Today');
 	if (todayGroup)
 	{

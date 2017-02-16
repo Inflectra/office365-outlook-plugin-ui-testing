@@ -56,6 +56,9 @@
         <Path>C:\Work\Inflectra\InflectraGitProjects\office365-outlook-plugin-ui-testing\Common.js</Path>
       </TestFile>
       <TestFile>
+        <Path>C:\Work\Inflectra\InflectraGitProjects\office365-outlook-plugin-ui-testing\Data.xlsx</Path>
+      </TestFile>
+      <TestFile>
         <Path>C:\Work\Inflectra\InflectraGitProjects\office365-outlook-plugin-ui-testing\Parameters.xlsx</Path>
       </TestFile>
     </TestFiles>

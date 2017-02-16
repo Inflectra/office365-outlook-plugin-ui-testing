@@ -396,7 +396,404 @@
 		"title": "Mail - Sheldon Cooper - Outlook",
 		"url": "https://outlook.office365.com/owa/?realm=grinmark.onmicrosoft.com&exsvurl=1&ll-cc=1033&modurl=0"
 	},
-	"Leonard_Hofstadter": {
+	"TextMiner": {
+		"actions": [
+			{
+				"name": "DoAction",
+				"signature": "",
+				"tag": "Generic"
+			},
+			{
+				"name": "DoEnsureVisible",
+				"signature": "",
+				"description": "User scrolls visible area to \"%object_name%\""
+			},
+			{
+				"name": "DoClick",
+				"signature": "x, y, forceEvent",
+				"description": "Users clicks \"%object_name%\" in window \"%window_name%\"",
+				"paramInfo": {
+					"x": {
+						"type": "Number",
+						"optional": true
+					},
+					"y": {
+						"type": "Number",
+						"optional": true
+					},
+					"forceEvent": {
+						"type": "bool",
+						"optional": true
+					}
+				}
+			},
+			{
+				"name": "DoLClick",
+				"signature": "/**Number*/x,/**Number*/y",
+				"tag": "Generic"
+			},
+			{
+				"name": "DoLDClick",
+				"signature": "/**Number*/x,/**Number*/y",
+				"tag": "Generic"
+			},
+			{
+				"name": "DoLButtonUp",
+				"signature": "",
+				"tag": "Generic"
+			},
+			{
+				"name": "DoLButtonDown",
+				"signature": "",
+				"tag": "Generic"
+			},
+			{
+				"name": "DoMouseMove",
+				"signature": "/**Number*/x, /**Number*/y",
+				"tag": "Generic"
+			},
+			{
+				"name": "DoRButtonDown",
+				"signature": "",
+				"tag": "Generic"
+			},
+			{
+				"name": "DoRButtonUp",
+				"signature": "",
+				"tag": "Generic"
+			},
+			{
+				"name": "DoRClick",
+				"signature": "/**Number*/x,/**Number*/y",
+				"tag": "Generic"
+			},
+			{
+				"name": "DoRDClick",
+				"signature": "/**Number*/x,/**Number*/y",
+				"tag": "Generic"
+			},
+			{
+				"name": "DoMButtonDown",
+				"signature": "",
+				"tag": "Generic"
+			},
+			{
+				"name": "DoMButtonUp",
+				"signature": "",
+				"tag": "Generic"
+			},
+			{
+				"name": "DoMClick",
+				"signature": "/**Number*/x,/**Number*/y",
+				"tag": "Generic"
+			},
+			{
+				"name": "DoMDClick",
+				"signature": "/**Number*/x,/**Number*/y",
+				"tag": "Generic"
+			},
+			{
+				"name": "DoSendKeys",
+				"signature": "/**String*/ keys",
+				"tag": "Generic"
+			},
+			{
+				"name": "DoAnalogPlay",
+				"signature": "/**String*/ path, /**Number*/left, /**Number*/top",
+				"tag": "Generic"
+			},
+			{
+				"name": "DoDumpWidget",
+				"signature": "filePath",
+				"tag": "Generic"
+			},
+			{
+				"name": "DoDblClick",
+				"signature": "",
+				"description": "User performs a left double click on \"%object_name%\" in window \"%window_name%\""
+			},
+			{
+				"name": "DoSetText",
+				"signature": "/**String*/txt",
+				"description": "User enters text \"%param0%\" into \"%object_name%\" in window \"%window_name%\""
+			},
+			{
+				"name": "DoSelect",
+				"signature": "/**String*/txt",
+				"description": "User selects \"%param0% in \"%object_name%\" in window \"%window_name%\""
+			},
+			{
+				"name": "DoAddSelection",
+				"signature": "/**String*/optionText",
+				"description": "User adds \"%param0%\" to selection in \"%object_name%\" in window \"%window_name%\""
+			},
+			{
+				"name": "DoRemoveSelection",
+				"signature": "/**String*/optionText",
+				"description": "User removes \"%param0%\" from selection in \"%object_name%\""
+			},
+			{
+				"name": "DoGetSelection",
+				"signature": "/**String*/delim",
+				"description": "Get selected options of \"%object_name%\""
+			},
+			{
+				"name": "DoGetRect",
+				"signature": "",
+				"description": "Get bounds rectangle of \"%object_name%\""
+			},
+			{
+				"name": "DoDOMRoot",
+				"signature": "",
+				"description": "Find root element for this one"
+			},
+			{
+				"name": "DoDOMParent",
+				"signature": "",
+				"description": "Find parent element for this one"
+			},
+			{
+				"name": "DoDOMNextSibling",
+				"signature": "",
+				"description": "Find next sibling element for this one"
+			},
+			{
+				"name": "DoDOMPrevSibling",
+				"signature": "",
+				"description": "Find previous sibling element for this one"
+			},
+			{
+				"name": "DoDOMChildrenCount",
+				"signature": "",
+				"description": "Return number of children elements for this one"
+			},
+			{
+				"name": "DoDOMChildAt",
+				"signature": "/**Number*/n",
+				"description": "Get child #%param0% of %object_name%"
+			},
+			{
+				"name": "DoDOMGetAttribute",
+				"signature": "/**String*/attrName",
+				"description": "Get attribute '%param0%' of %object_name%"
+			},
+			{
+				"name": "DoDOMGetAttributes",
+				"signature": "",
+				"description": "Get attribute '%param0%' of %object_name%"
+			},
+			{
+				"name": "DoDOMFindParentWithAttribute",
+				"signature": "/**String*/attrName, /**String*/match"
+			},
+			{
+				"name": "DoDOMQueryXPath",
+				"signature": "/**String*/xpath",
+				"description": "Get array of elements matching '%param0%' XPath query on %object_name%"
+			},
+			{
+				"name": "DoDOMQueryCss",
+				"signature": "/**String*/css",
+				"description": "Get array of elements matching '%param0%' CSS selector on %object_name%"
+			},
+			{
+				"name": "DoDOMConvert",
+				"signature": "/**String*/ type",
+				"description": "Convert %object_name% object to a type '%param0%'"
+			},
+			{
+				"name": "DoSetCheck",
+				"signature": "/**Boolean*/ state",
+				"description": "User toggles \"%object_name%\" in window \"%window_name%\""
+			}
+		],
+		"properties": [
+			{
+				"name": "X",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true,
+				"tag": "Generic"
+			},
+			{
+				"name": "Y",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true,
+				"tag": "Generic"
+			},
+			{
+				"name": "Width",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true,
+				"tag": "Generic"
+			},
+			{
+				"name": "Height",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true,
+				"tag": "Generic"
+			},
+			{
+				"name": "Name",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true,
+				"tag": "Generic"
+			},
+			{
+				"name": "WindowText",
+				"setsign": "value",
+				"getsign": "",
+				"readonly": false,
+				"tag": "Generic"
+			},
+			{
+				"name": "Class",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true,
+				"tag": "Generic"
+			},
+			{
+				"name": "State",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true,
+				"tag": "Generic"
+			},
+			{
+				"name": "Value",
+				"setsign": "value",
+				"getsign": "",
+				"readonly": false,
+				"tag": "Generic"
+			},
+			{
+				"name": "ObjectType",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true,
+				"tag": "Generic"
+			},
+			{
+				"name": "Bitmap",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true,
+				"tag": "Generic"
+			},
+			{
+				"name": "BWBitmap",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true,
+				"tag": "Generic"
+			},
+			{
+				"name": "Label",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true
+			},
+			{
+				"name": "Alt",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true
+			},
+			{
+				"name": "Title",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true
+			},
+			{
+				"name": "InnerText",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true
+			},
+			{
+				"name": "NodeText",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true
+			},
+			{
+				"name": "Checked",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true
+			},
+			{
+				"name": "Enabled",
+				"setsign": "value",
+				"getsign": "",
+				"readonly": false
+			},
+			{
+				"name": "Id",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true
+			},
+			{
+				"name": "Style",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true
+			},
+			{
+				"name": "Tag",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true
+			},
+			{
+				"name": "Href",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true
+			},
+			{
+				"name": "XPath",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true
+			},
+			{
+				"name": "PageURL",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true
+			},
+			{
+				"name": "PageTitle",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true
+			}
+		],
+		"items": null,
+		"window_text": "Mail - Sheldon Cooper - Outlook - Internet Explorer - [InPrivate]",
+		"window_class": "IEFrame",
+		"object_text": "param:object_name",
+		"object_role": "ROLE_SYSTEM_CLIENT",
+		"object_class": "Internet Explorer_Server",
+		"version": 0,
+		"object_type": "HTMLObject",
+		"object_flavor": "Cell",
+		"object_name": "TextMiner",
+		"object_library": "Internet Explorer HTML",
+		"window_name": "Mail - Sheldon Cooper - Outlook - Internet Explorer - [InPrivate]",
+		"xpath": "/html/body/div[3]/div/div[@id='primaryContainer']/div[3]/div/div[1]/div[@id='O365fpcontainerid']/div[7]/div/div[1]/span[2]",
+		"title": "Mail - Sheldon Cooper - Outlook",
+		"url": "https://outlook.office365.com/owa/?realm=grinmark.onmicrosoft.com&exsvurl=1&ll-cc=1033&modurl=0"
+	},
+	"Contact2": {
 		"actions": [
 			{
 				"name": "DoAction",
@@ -793,7 +1190,7 @@
 		"title": "Mail - Sheldon Cooper - Outlook",
 		"url": "https://outlook.office365.com/owa/?realm=grinmark.onmicrosoft.com&exsvurl=1&ll-cc=1033&modurl=0"
 	},
-	"Sheldon_Cooper": {
+	"Contact1": {
 		"actions": [
 			{
 				"name": "DoAction",
@@ -1187,403 +1584,6 @@
 		"object_library": "Internet Explorer HTML",
 		"window_name": "Mail - Sheldon Cooper - Outlook - Internet Explorer - [InPrivate]",
 		"xpath": "//iframe[@id='exttsp0' and @name='{\"baseFrameName\":\"_xdm_0__exttsp05a8089a0_6c27a3ec_1487245789935\",\"hostInfo\":\"Outlook|Web|16.01|en-US|7dac1c64-a517-4d4d-2c99-ef164cfb23dd|\",\"xdmInfo\":\"1649d996_9488d82_1487245789935|exttsp0|https://outlook.office365.com/owa/?realm=grinmark.onmicrosoft.com&exsvurl=1&ll-cc=1033&modurl=0\",\"serializerVersion\":1}']@@@/html/body/div[2]/div/div/div[2]/div/a[1]/h4",
-		"title": "Mail - Sheldon Cooper - Outlook",
-		"url": "https://outlook.office365.com/owa/?realm=grinmark.onmicrosoft.com&exsvurl=1&ll-cc=1033&modurl=0"
-	},
-	"TextMiner": {
-		"actions": [
-			{
-				"name": "DoAction",
-				"signature": "",
-				"tag": "Generic"
-			},
-			{
-				"name": "DoEnsureVisible",
-				"signature": "",
-				"description": "User scrolls visible area to \"%object_name%\""
-			},
-			{
-				"name": "DoClick",
-				"signature": "x, y, forceEvent",
-				"description": "Users clicks \"%object_name%\" in window \"%window_name%\"",
-				"paramInfo": {
-					"x": {
-						"type": "Number",
-						"optional": true
-					},
-					"y": {
-						"type": "Number",
-						"optional": true
-					},
-					"forceEvent": {
-						"type": "bool",
-						"optional": true
-					}
-				}
-			},
-			{
-				"name": "DoLClick",
-				"signature": "/**Number*/x,/**Number*/y",
-				"tag": "Generic"
-			},
-			{
-				"name": "DoLDClick",
-				"signature": "/**Number*/x,/**Number*/y",
-				"tag": "Generic"
-			},
-			{
-				"name": "DoLButtonUp",
-				"signature": "",
-				"tag": "Generic"
-			},
-			{
-				"name": "DoLButtonDown",
-				"signature": "",
-				"tag": "Generic"
-			},
-			{
-				"name": "DoMouseMove",
-				"signature": "/**Number*/x, /**Number*/y",
-				"tag": "Generic"
-			},
-			{
-				"name": "DoRButtonDown",
-				"signature": "",
-				"tag": "Generic"
-			},
-			{
-				"name": "DoRButtonUp",
-				"signature": "",
-				"tag": "Generic"
-			},
-			{
-				"name": "DoRClick",
-				"signature": "/**Number*/x,/**Number*/y",
-				"tag": "Generic"
-			},
-			{
-				"name": "DoRDClick",
-				"signature": "/**Number*/x,/**Number*/y",
-				"tag": "Generic"
-			},
-			{
-				"name": "DoMButtonDown",
-				"signature": "",
-				"tag": "Generic"
-			},
-			{
-				"name": "DoMButtonUp",
-				"signature": "",
-				"tag": "Generic"
-			},
-			{
-				"name": "DoMClick",
-				"signature": "/**Number*/x,/**Number*/y",
-				"tag": "Generic"
-			},
-			{
-				"name": "DoMDClick",
-				"signature": "/**Number*/x,/**Number*/y",
-				"tag": "Generic"
-			},
-			{
-				"name": "DoSendKeys",
-				"signature": "/**String*/ keys",
-				"tag": "Generic"
-			},
-			{
-				"name": "DoAnalogPlay",
-				"signature": "/**String*/ path, /**Number*/left, /**Number*/top",
-				"tag": "Generic"
-			},
-			{
-				"name": "DoDumpWidget",
-				"signature": "filePath",
-				"tag": "Generic"
-			},
-			{
-				"name": "DoDblClick",
-				"signature": "",
-				"description": "User performs a left double click on \"%object_name%\" in window \"%window_name%\""
-			},
-			{
-				"name": "DoSetText",
-				"signature": "/**String*/txt",
-				"description": "User enters text \"%param0%\" into \"%object_name%\" in window \"%window_name%\""
-			},
-			{
-				"name": "DoSelect",
-				"signature": "/**String*/txt",
-				"description": "User selects \"%param0% in \"%object_name%\" in window \"%window_name%\""
-			},
-			{
-				"name": "DoAddSelection",
-				"signature": "/**String*/optionText",
-				"description": "User adds \"%param0%\" to selection in \"%object_name%\" in window \"%window_name%\""
-			},
-			{
-				"name": "DoRemoveSelection",
-				"signature": "/**String*/optionText",
-				"description": "User removes \"%param0%\" from selection in \"%object_name%\""
-			},
-			{
-				"name": "DoGetSelection",
-				"signature": "/**String*/delim",
-				"description": "Get selected options of \"%object_name%\""
-			},
-			{
-				"name": "DoGetRect",
-				"signature": "",
-				"description": "Get bounds rectangle of \"%object_name%\""
-			},
-			{
-				"name": "DoDOMRoot",
-				"signature": "",
-				"description": "Find root element for this one"
-			},
-			{
-				"name": "DoDOMParent",
-				"signature": "",
-				"description": "Find parent element for this one"
-			},
-			{
-				"name": "DoDOMNextSibling",
-				"signature": "",
-				"description": "Find next sibling element for this one"
-			},
-			{
-				"name": "DoDOMPrevSibling",
-				"signature": "",
-				"description": "Find previous sibling element for this one"
-			},
-			{
-				"name": "DoDOMChildrenCount",
-				"signature": "",
-				"description": "Return number of children elements for this one"
-			},
-			{
-				"name": "DoDOMChildAt",
-				"signature": "/**Number*/n",
-				"description": "Get child #%param0% of %object_name%"
-			},
-			{
-				"name": "DoDOMGetAttribute",
-				"signature": "/**String*/attrName",
-				"description": "Get attribute '%param0%' of %object_name%"
-			},
-			{
-				"name": "DoDOMGetAttributes",
-				"signature": "",
-				"description": "Get attribute '%param0%' of %object_name%"
-			},
-			{
-				"name": "DoDOMFindParentWithAttribute",
-				"signature": "/**String*/attrName, /**String*/match"
-			},
-			{
-				"name": "DoDOMQueryXPath",
-				"signature": "/**String*/xpath",
-				"description": "Get array of elements matching '%param0%' XPath query on %object_name%"
-			},
-			{
-				"name": "DoDOMQueryCss",
-				"signature": "/**String*/css",
-				"description": "Get array of elements matching '%param0%' CSS selector on %object_name%"
-			},
-			{
-				"name": "DoDOMConvert",
-				"signature": "/**String*/ type",
-				"description": "Convert %object_name% object to a type '%param0%'"
-			},
-			{
-				"name": "DoSetCheck",
-				"signature": "/**Boolean*/ state",
-				"description": "User toggles \"%object_name%\" in window \"%window_name%\""
-			}
-		],
-		"properties": [
-			{
-				"name": "X",
-				"setsign": "",
-				"getsign": "",
-				"readonly": true,
-				"tag": "Generic"
-			},
-			{
-				"name": "Y",
-				"setsign": "",
-				"getsign": "",
-				"readonly": true,
-				"tag": "Generic"
-			},
-			{
-				"name": "Width",
-				"setsign": "",
-				"getsign": "",
-				"readonly": true,
-				"tag": "Generic"
-			},
-			{
-				"name": "Height",
-				"setsign": "",
-				"getsign": "",
-				"readonly": true,
-				"tag": "Generic"
-			},
-			{
-				"name": "Name",
-				"setsign": "",
-				"getsign": "",
-				"readonly": true,
-				"tag": "Generic"
-			},
-			{
-				"name": "WindowText",
-				"setsign": "value",
-				"getsign": "",
-				"readonly": false,
-				"tag": "Generic"
-			},
-			{
-				"name": "Class",
-				"setsign": "",
-				"getsign": "",
-				"readonly": true,
-				"tag": "Generic"
-			},
-			{
-				"name": "State",
-				"setsign": "",
-				"getsign": "",
-				"readonly": true,
-				"tag": "Generic"
-			},
-			{
-				"name": "Value",
-				"setsign": "value",
-				"getsign": "",
-				"readonly": false,
-				"tag": "Generic"
-			},
-			{
-				"name": "ObjectType",
-				"setsign": "",
-				"getsign": "",
-				"readonly": true,
-				"tag": "Generic"
-			},
-			{
-				"name": "Bitmap",
-				"setsign": "",
-				"getsign": "",
-				"readonly": true,
-				"tag": "Generic"
-			},
-			{
-				"name": "BWBitmap",
-				"setsign": "",
-				"getsign": "",
-				"readonly": true,
-				"tag": "Generic"
-			},
-			{
-				"name": "Label",
-				"setsign": "",
-				"getsign": "",
-				"readonly": true
-			},
-			{
-				"name": "Alt",
-				"setsign": "",
-				"getsign": "",
-				"readonly": true
-			},
-			{
-				"name": "Title",
-				"setsign": "",
-				"getsign": "",
-				"readonly": true
-			},
-			{
-				"name": "InnerText",
-				"setsign": "",
-				"getsign": "",
-				"readonly": true
-			},
-			{
-				"name": "NodeText",
-				"setsign": "",
-				"getsign": "",
-				"readonly": true
-			},
-			{
-				"name": "Checked",
-				"setsign": "",
-				"getsign": "",
-				"readonly": true
-			},
-			{
-				"name": "Enabled",
-				"setsign": "value",
-				"getsign": "",
-				"readonly": false
-			},
-			{
-				"name": "Id",
-				"setsign": "",
-				"getsign": "",
-				"readonly": true
-			},
-			{
-				"name": "Style",
-				"setsign": "",
-				"getsign": "",
-				"readonly": true
-			},
-			{
-				"name": "Tag",
-				"setsign": "",
-				"getsign": "",
-				"readonly": true
-			},
-			{
-				"name": "Href",
-				"setsign": "",
-				"getsign": "",
-				"readonly": true
-			},
-			{
-				"name": "XPath",
-				"setsign": "",
-				"getsign": "",
-				"readonly": true
-			},
-			{
-				"name": "PageURL",
-				"setsign": "",
-				"getsign": "",
-				"readonly": true
-			},
-			{
-				"name": "PageTitle",
-				"setsign": "",
-				"getsign": "",
-				"readonly": true
-			}
-		],
-		"items": null,
-		"window_text": "Mail - Sheldon Cooper - Outlook - Internet Explorer - [InPrivate]",
-		"window_class": "IEFrame",
-		"object_text": "param:object_name",
-		"object_role": "ROLE_SYSTEM_CLIENT",
-		"object_class": "Internet Explorer_Server",
-		"version": 0,
-		"object_type": "HTMLObject",
-		"object_flavor": "Cell",
-		"object_name": "TextMiner",
-		"object_library": "Internet Explorer HTML",
-		"window_name": "Mail - Sheldon Cooper - Outlook - Internet Explorer - [InPrivate]",
-		"xpath": "/html/body/div[3]/div/div[@id='primaryContainer']/div[3]/div/div[1]/div[@id='O365fpcontainerid']/div[7]/div/div[1]/span[2]",
 		"title": "Mail - Sheldon Cooper - Outlook",
 		"url": "https://outlook.office365.com/owa/?realm=grinmark.onmicrosoft.com&exsvurl=1&ll-cc=1033&modurl=0"
 	}

@@ -19,11 +19,11 @@ function Test()
 			if (Tester.Assert("Email found", firstEmail != null))
 			{
 				firstEmail.DoClick();
-				SeS('TextMinerButton').DoAction();
+				SeS('TextMinerButton').DoClick();
 				
 				//TODO
 				Global.DoSleep(10000);
-				Common_VerifyPlugin();
+				Common_VerifyPluginParameterized();
 			}
 		}
 	}

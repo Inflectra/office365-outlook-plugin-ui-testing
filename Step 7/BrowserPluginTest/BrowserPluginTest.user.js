@@ -71,6 +71,6 @@ function VerifyPlugin()
 	Global.DoWaitFor('TextMiner', 30000);
 	if (Tester.Assert("Plugin panel opened", SeS('TextMiner') != null && SeS('TextMiner').GetNodeText() == "TextMiner"))
 	{
-		Common_VerifyPlugin();
+		Common_VerifyPluginParameterized();
 	}
 }
