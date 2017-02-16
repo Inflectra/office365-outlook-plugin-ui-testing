@@ -1,6 +1,16 @@
+
 function Common_GetParameter(name)
 {
-	Spreadsheet.DoAttach('../../Parameters.xlsx');
+	var localParametersFileName = '../../LocalParameters.xlsx';
+	var fso = new ActiveXObject("Scripting.FileSystemObject"); 
+	if(fso.FileExists(localParametersFileName))
+	{
+		Spreadsheet.DoAttach(localParametersFileName);
+	}
+	else
+	{
+		Spreadsheet.DoAttach('../../Parameters.xlsx');
+	}
 	var rowCount = Spreadsheet.GetRowCount();
 	for(var i = 0; i < rowCount; i++)
 	{
