@@ -60,6 +60,9 @@
           <TestFile>
             <Path>Office365PluginTest.user.js</Path>
           </TestFile>
+          <TestFile>
+            <Path>README.txt</Path>
+          </TestFile>
         </TestFiles>
       </TestGroup>
       <TestGroup>
