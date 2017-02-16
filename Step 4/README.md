@@ -1,0 +1,1 @@
+Launch Outlook, navigate to first email in the Inbox and start the plugin.
