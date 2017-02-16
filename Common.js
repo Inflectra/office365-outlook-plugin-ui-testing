@@ -23,3 +23,19 @@ function Common_GetParameter(name)
 	return null;
 }
 
+
+function Common_VerifyPlugin()
+{
+	Tester.Message("Verify Plugin");
+	Global.DoWaitFor('TextMiner', 30000);
+	if (Tester.Assert("Plugin panel opened", SeS('TextMiner') != null && SeS('TextMiner').GetNodeText() == "TextMiner"))
+	{
+		Global.DoWaitFor('ContactsCount', 30000);
+		if (Tester.Assert("2 contacts found", SeS('ContactsCount') != null && SeS('ContactsCount').GetNodeText() == "2"))
+		{
+			Tester.Assert("Sheldon found", SeS('Sheldon_Cooper') != null);
+			Tester.Assert("Leonard found", SeS('Leonard_Hofstadter') != null);
+		}
+	}
+}
+

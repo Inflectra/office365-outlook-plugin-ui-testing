@@ -1,0 +1,1 @@
+Cross-browser test that opens an email in Office 365 mailbox and launches the plugin. Separate test is used to store plugin objects. Verification code moved to Common.js.
