@@ -336,251 +336,6 @@
 		"window_name": "Inbox - dev@grinmark.onmicrosoft.com - Outlook",
 		"location": "Custom/Pane[1]/Mail Folders"
 	},
-	"Group_By__Expanded__Date__Today": {
-		"actions": [
-			{
-				"name": "DoAction",
-				"signature": "",
-				"tag": "Generic"
-			},
-			{
-				"name": "DoEnsureVisible",
-				"signature": "",
-				"tag": "Generic"
-			},
-			{
-				"name": "DoClick",
-				"signature": "x, y"
-			},
-			{
-				"name": "DoLClick",
-				"signature": "/**Number*/x,/**Number*/y",
-				"tag": "Generic"
-			},
-			{
-				"name": "DoLDClick",
-				"signature": "/**Number*/x,/**Number*/y",
-				"tag": "Generic"
-			},
-			{
-				"name": "DoLButtonUp",
-				"signature": "",
-				"tag": "Generic"
-			},
-			{
-				"name": "DoLButtonDown",
-				"signature": "",
-				"tag": "Generic"
-			},
-			{
-				"name": "DoMouseMove",
-				"signature": "/**Number*/x, /**Number*/y",
-				"tag": "Generic"
-			},
-			{
-				"name": "DoRButtonDown",
-				"signature": "",
-				"tag": "Generic"
-			},
-			{
-				"name": "DoRButtonUp",
-				"signature": "",
-				"tag": "Generic"
-			},
-			{
-				"name": "DoRClick",
-				"signature": "/**Number*/x,/**Number*/y",
-				"tag": "Generic"
-			},
-			{
-				"name": "DoRDClick",
-				"signature": "/**Number*/x,/**Number*/y",
-				"tag": "Generic"
-			},
-			{
-				"name": "DoMButtonDown",
-				"signature": "",
-				"tag": "Generic"
-			},
-			{
-				"name": "DoMButtonUp",
-				"signature": "",
-				"tag": "Generic"
-			},
-			{
-				"name": "DoMClick",
-				"signature": "/**Number*/x,/**Number*/y",
-				"tag": "Generic"
-			},
-			{
-				"name": "DoMDClick",
-				"signature": "/**Number*/x,/**Number*/y",
-				"tag": "Generic"
-			},
-			{
-				"name": "DoSendKeys",
-				"signature": "/**String*/ keys",
-				"tag": "Generic"
-			},
-			{
-				"name": "DoAnalogPlay",
-				"signature": "/**String*/ path, /**Number*/left, /**Number*/top",
-				"tag": "Generic"
-			},
-			{
-				"name": "DoDumpWidget",
-				"signature": "dumpProperties, maxDepth, trimValue, indent, filePath, append, ignoreProps"
-			},
-			{
-				"name": "DoGetWidgetProperty",
-				"signature": "name"
-			},
-			{
-				"name": "DoFindByText",
-				"signature": "textOrRegexp, depth"
-			}
-		],
-		"properties": [
-			{
-				"name": "X",
-				"setsign": "",
-				"getsign": "",
-				"readonly": true,
-				"tag": "Generic"
-			},
-			{
-				"name": "Y",
-				"setsign": "",
-				"getsign": "",
-				"readonly": true,
-				"tag": "Generic"
-			},
-			{
-				"name": "Width",
-				"setsign": "",
-				"getsign": "",
-				"readonly": true,
-				"tag": "Generic"
-			},
-			{
-				"name": "Height",
-				"setsign": "",
-				"getsign": "",
-				"readonly": true,
-				"tag": "Generic"
-			},
-			{
-				"name": "Name",
-				"setsign": "",
-				"getsign": "",
-				"readonly": true,
-				"tag": "Generic"
-			},
-			{
-				"name": "WindowText",
-				"setsign": "value",
-				"getsign": "",
-				"readonly": false,
-				"tag": "Generic"
-			},
-			{
-				"name": "Class",
-				"setsign": "",
-				"getsign": "",
-				"readonly": true,
-				"tag": "Generic"
-			},
-			{
-				"name": "State",
-				"setsign": "",
-				"getsign": "",
-				"readonly": true,
-				"tag": "Generic"
-			},
-			{
-				"name": "Value",
-				"setsign": "value",
-				"getsign": "",
-				"readonly": false,
-				"tag": "Generic"
-			},
-			{
-				"name": "ObjectType",
-				"setsign": "",
-				"getsign": "",
-				"readonly": true,
-				"tag": "Generic"
-			},
-			{
-				"name": "Bitmap",
-				"setsign": "",
-				"getsign": "",
-				"readonly": true,
-				"tag": "Generic"
-			},
-			{
-				"name": "BWBitmap",
-				"setsign": "",
-				"getsign": "",
-				"readonly": true,
-				"tag": "Generic"
-			},
-			{
-				"name": "TypeName",
-				"setsign": "",
-				"getsign": "",
-				"readonly": true
-			},
-			{
-				"name": "Parent",
-				"setsign": "",
-				"getsign": "",
-				"readonly": true
-			},
-			{
-				"name": "NextSibling",
-				"setsign": "",
-				"getsign": "",
-				"readonly": true
-			},
-			{
-				"name": "PrevSibling",
-				"setsign": "",
-				"getsign": "",
-				"readonly": true
-			},
-			{
-				"name": "IndexInParent",
-				"setsign": "",
-				"getsign": "",
-				"readonly": true
-			},
-			{
-				"name": "ChildrenCount",
-				"setsign": "",
-				"getsign": "",
-				"readonly": true
-			},
-			{
-				"name": "ChildAt",
-				"setsign": "",
-				"getsign": "ind",
-				"readonly": true
-			}
-		],
-		"items": null,
-		"window_text": "regex:Inbox.*",
-		"window_class": "rctrl_renwnd32",
-		"object_text": "",
-		"object_role": "param:object_class",
-		"object_class": "Group",
-		"version": 0,
-		"object_type": "UIAObject",
-		"object_flavor": "UIAutomation",
-		"object_name": "Group By: Expanded: Date: Today",
-		"window_name": "regex:Inbox.*",
-		"location": "No id/Table View/No id[4]"
-	},
 	"TextMinerButton": {
 		"actions": [
 			{
@@ -841,5 +596,250 @@
 		"object_name": "TextMiner",
 		"window_name": "regex:Inbox.*",
 		"location": "Ribbon/Lower Ribbon/Home/GrinMark/TextMiner"
+	},
+	"Table_View": {
+		"actions": [
+			{
+				"name": "DoAction",
+				"signature": "",
+				"tag": "Generic"
+			},
+			{
+				"name": "DoEnsureVisible",
+				"signature": "",
+				"tag": "Generic"
+			},
+			{
+				"name": "DoClick",
+				"signature": "x, y"
+			},
+			{
+				"name": "DoLClick",
+				"signature": "/**Number*/x,/**Number*/y",
+				"tag": "Generic"
+			},
+			{
+				"name": "DoLDClick",
+				"signature": "/**Number*/x,/**Number*/y",
+				"tag": "Generic"
+			},
+			{
+				"name": "DoLButtonUp",
+				"signature": "",
+				"tag": "Generic"
+			},
+			{
+				"name": "DoLButtonDown",
+				"signature": "",
+				"tag": "Generic"
+			},
+			{
+				"name": "DoMouseMove",
+				"signature": "/**Number*/x, /**Number*/y",
+				"tag": "Generic"
+			},
+			{
+				"name": "DoRButtonDown",
+				"signature": "",
+				"tag": "Generic"
+			},
+			{
+				"name": "DoRButtonUp",
+				"signature": "",
+				"tag": "Generic"
+			},
+			{
+				"name": "DoRClick",
+				"signature": "/**Number*/x,/**Number*/y",
+				"tag": "Generic"
+			},
+			{
+				"name": "DoRDClick",
+				"signature": "/**Number*/x,/**Number*/y",
+				"tag": "Generic"
+			},
+			{
+				"name": "DoMButtonDown",
+				"signature": "",
+				"tag": "Generic"
+			},
+			{
+				"name": "DoMButtonUp",
+				"signature": "",
+				"tag": "Generic"
+			},
+			{
+				"name": "DoMClick",
+				"signature": "/**Number*/x,/**Number*/y",
+				"tag": "Generic"
+			},
+			{
+				"name": "DoMDClick",
+				"signature": "/**Number*/x,/**Number*/y",
+				"tag": "Generic"
+			},
+			{
+				"name": "DoSendKeys",
+				"signature": "/**String*/ keys",
+				"tag": "Generic"
+			},
+			{
+				"name": "DoAnalogPlay",
+				"signature": "/**String*/ path, /**Number*/left, /**Number*/top",
+				"tag": "Generic"
+			},
+			{
+				"name": "DoDumpWidget",
+				"signature": "dumpProperties, maxDepth, trimValue, indent, filePath, append, ignoreProps"
+			},
+			{
+				"name": "DoGetWidgetProperty",
+				"signature": "name"
+			},
+			{
+				"name": "DoFindByText",
+				"signature": "textOrRegexp, depth"
+			}
+		],
+		"properties": [
+			{
+				"name": "X",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true,
+				"tag": "Generic"
+			},
+			{
+				"name": "Y",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true,
+				"tag": "Generic"
+			},
+			{
+				"name": "Width",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true,
+				"tag": "Generic"
+			},
+			{
+				"name": "Height",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true,
+				"tag": "Generic"
+			},
+			{
+				"name": "Name",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true,
+				"tag": "Generic"
+			},
+			{
+				"name": "WindowText",
+				"setsign": "value",
+				"getsign": "",
+				"readonly": false,
+				"tag": "Generic"
+			},
+			{
+				"name": "Class",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true,
+				"tag": "Generic"
+			},
+			{
+				"name": "State",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true,
+				"tag": "Generic"
+			},
+			{
+				"name": "Value",
+				"setsign": "value",
+				"getsign": "",
+				"readonly": false,
+				"tag": "Generic"
+			},
+			{
+				"name": "ObjectType",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true,
+				"tag": "Generic"
+			},
+			{
+				"name": "Bitmap",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true,
+				"tag": "Generic"
+			},
+			{
+				"name": "BWBitmap",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true,
+				"tag": "Generic"
+			},
+			{
+				"name": "TypeName",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true
+			},
+			{
+				"name": "Parent",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true
+			},
+			{
+				"name": "NextSibling",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true
+			},
+			{
+				"name": "PrevSibling",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true
+			},
+			{
+				"name": "IndexInParent",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true
+			},
+			{
+				"name": "ChildrenCount",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true
+			},
+			{
+				"name": "ChildAt",
+				"setsign": "",
+				"getsign": "ind",
+				"readonly": true
+			}
+		],
+		"items": null,
+		"window_text": "regex:Inbox.*",
+		"window_class": "rctrl_renwnd32",
+		"object_text": "",
+		"object_role": "param:object_class",
+		"object_class": "Table",
+		"version": 0,
+		"object_type": "UIAObject",
+		"object_flavor": "UIAutomation",
+		"object_name": "Table View",
+		"window_name": "regex:Inbox.*",
+		"location": "No id/Table View"
 	}
 }

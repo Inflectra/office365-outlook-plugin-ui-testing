@@ -9,20 +9,18 @@ function Test()
 
 	var userName = Common_GetParameter("UserName");
 	SeS('Mail_Folders')._DoClickNode(userName + ";Inbox");
-	var todayGroup = SeS('Group_By__Expanded__Date__Today');
-	if (todayGroup)
+	
+	var tableView = SeS('Table_View');
+	if (Tester.Assert("Table View is present", tableView != null))
 	{
-		var childrenCount = todayGroup.GetChildrenCount();
-		if (Tester.Assert("Inbox is not empty", childrenCount > 0))
+		var textObject = tableView.DoFindByText("Imported from Rapise Email 1", 5);
+		if (Tester.Assert("Text Object found", textObject != null))
 		{
-			var firstEmail = todayGroup.GetChildAt(0);
+			var firstEmail = textObject.GetParent();
 			if (Tester.Assert("Email found", firstEmail != null))
 			{
 				firstEmail.DoClick();
 				SeS('TextMinerButton').DoClick();
-				
-				//TODO
-				Global.DoSleep(10000);
 				Common_VerifyPluginParameterized();
 			}
 		}
