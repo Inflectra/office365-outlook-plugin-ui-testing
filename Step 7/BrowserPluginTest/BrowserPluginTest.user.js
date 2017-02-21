@@ -39,7 +39,8 @@ function SelectEmail(index)
 	Tester.Message("Select Email");
 	var xpath = "//div[@id='_ariaId_24']";
 	xpath = xpath.replace("24", "" + (24 + index * 2));
-	SeS('EmailItem', {xpath:xpath}).DoClick();
+	SeS('EmailItem', {xpath:xpath}).DoMouseMove();
+	Global.DoClick();
 }
 
 /** @scenario LogoutFromMailbox*/

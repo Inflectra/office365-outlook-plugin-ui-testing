@@ -1,6 +1,5 @@
 g_savePlaybackScreenshotsBeforeAction = true;
 g_savePlaybackScreenshotsAfterAction = false;
-g_browserAutoOpen = false;
 
 
 function Common_GetParameter(name)

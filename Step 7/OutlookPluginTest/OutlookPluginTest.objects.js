@@ -64,8 +64,8 @@ var saved_script_objects={
 		"version": 0,
 		"object_type": "UIAObject",
 		"object_flavor": "UIAutomation",
-		"object_name": "Table View",
+		"object_name": "regex:(Table View|T)",
 		"window_name": "regex:Inbox.*",
-		"location": "No id/Table View"
+		"location": "No id/regex:(Table View|T)"
 	}
 };

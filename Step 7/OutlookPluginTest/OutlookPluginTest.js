@@ -5,10 +5,12 @@ function Test()
 {
 	Global.DoLoadObjects('../PluginStateVerification/PluginStateVerification.objects.js');
 
-	var pid = Global.DoLaunch('C:\\Program Files (x86)\\Microsoft Office\\root\\Office16\\Outlook.exe');
+	var pid = Global.DoLaunch(g_browserExecutablePath, null, true);
 
+	Global.DoWaitFor('Mail_Folders', 20000);
 	var userName = Common_GetParameter("UserName");
-	SeS('Mail_Folders')._DoClickNode(userName + ";Inbox");
+
+	SeS('Mail_Folders').DoClickNode(userName + ";Inbox");
 	
 	var tableView = SeS('Table_View');
 	if (Tester.Assert("Table View is present", tableView != null))
@@ -31,5 +33,4 @@ function Test()
 }
 
 g_load_libraries=["UIAutomation", "%g_browserLibrary:Internet Explorer HTML%"];
-
 
