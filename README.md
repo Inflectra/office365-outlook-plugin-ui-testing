@@ -37,4 +37,6 @@ Objects created on the previous step are used to verify plugin state in Outlook 
 ### Step 7: Integration
 All pieces if the puzzle gathered together.
 
+### Test Diagram
+<img alt="Test Diagram" src="https://github.com/Inflectra/office365-outlook-plugin-ui-testing/blob/master/Media/Test%20Diagram.png" width="700"/>
 
