@@ -2,6 +2,8 @@
 
 eval(g_helper.Include("../../Common.js"));
 
+g_browserAutoOpen = true;
+
 /** @scenario Login*/
 function Login()
 {
@@ -62,16 +64,18 @@ function LogoutFromMailbox()
 function LaunchPlugin()
 {
 	Tester.Message("Launch Plugin");
+	Global.DoWaitFor('PLUGIN', 10000);
 	SeS('PLUGIN').DoClick();
 }
 
 /** @scenario VerifyPlugin*/
-function VerifyPlugin()
+function VerifyPlugin(params)
 {
 	Tester.Message("Verify Plugin");
 	Global.DoWaitFor('TextMiner', 30000);
 	if (Tester.Assert("Plugin panel opened", SeS('TextMiner') != null && SeS('TextMiner').GetNodeText() == "TextMiner"))
 	{
-		Common_VerifyPluginParameterized();
+		var dataRowNum = Common_GetDataRowNum(params);
+		Common_VerifyPluginParameterized(dataRowNum);
 	}
 }

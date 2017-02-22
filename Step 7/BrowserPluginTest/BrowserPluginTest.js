@@ -1,7 +1,7 @@
 
 
 
-function Test()
+function Test(params)
 {
 	Global.DoLoadObjects('../PluginStateVerification/PluginStateVerification.objects.js');
 
@@ -13,7 +13,7 @@ function Test()
 	SelectEmail(0);
 
 	LaunchPlugin();
-	VerifyPlugin();
+	VerifyPlugin(params);
 
 	LogoutFromMailbox();
 }

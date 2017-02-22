@@ -37,7 +37,7 @@ function Common_VerifyPlugin()
 	}
 }
 
-function Common_VerifyPluginParameterized()
+function Common_VerifyPluginParameterized(dataRowNum)
 {
 	Global.DoWaitFor('ContactsCount', 30000);
 	if (Tester.Assert("2 contacts found", SeS('ContactsCount') != null && SeS('ContactsCount').GetNodeText() == "2"))
@@ -51,13 +51,23 @@ function Common_VerifyPluginParameterized()
 			var contact2Name = Global.DoTrim(SeS('Contact2').GetNodeText());
 			
 			Spreadsheet.DoAttach('../../Data.xlsx');
-			var expectedContact1Name = Spreadsheet.GetCell("Contact 1", 1);
-			var expectedContact2Name = Spreadsheet.GetCell("Contact 2", 1);
+			var expectedContact1Name = Spreadsheet.GetCell("Contact 1", dataRowNum);
+			var expectedContact2Name = Spreadsheet.GetCell("Contact 2", dataRowNum);
 			
 			Tester.AssertEqual("Contact is " + expectedContact1Name, expectedContact1Name, contact1Name);
 			Tester.AssertEqual("Contact is " + expectedContact2Name, expectedContact2Name, contact2Name);
 		}
 	}
+}
+
+function Common_GetDataRowNum(params)
+{
+	var dataRowNum = 1;
+	if (params && typeof(params.dataRowNum) == "number")	
+	{
+		dataRowNum = params.dataRowNum;
+	}
+	return dataRowNum;
 }
 
 

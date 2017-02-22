@@ -1,0 +1,143 @@
+{
+  "WsdlUri": "ews2.dll",
+  "ServiceUri": "https://outlook.office365.com/EWS/Exchange.asmx",
+  "UseCustomServiceUri": true,
+  "Credential": null,
+  "SoapTypes": {
+    "ExchangeServiceBinding": {
+      "FindFolder": {
+        "Headers": {},
+        "Body": {
+          "FindFolder1": {
+            "FolderShape": null,
+            "Item": null,
+            "Restriction": null,
+            "ParentFolderIds": [
+              {
+                "@Type": "EWS2.ews.DistinguishedFolderIdType",
+                "Mailbox": null,
+                "Id": "inbox",
+                "ChangeKey": null
+              }
+            ],
+            "Traversal": "Shallow"
+          }
+        }
+      },
+      "GetFolder": {
+        "Headers": {
+          "RequestServerVersionValue": {
+            "Version": "Exchange2010_SP1",
+            "AnyAttr": null
+          }
+        },
+        "Body": {
+          "GetFolder1": {
+            "FolderShape": {
+              "BaseShape": "AllProperties",
+              "AdditionalProperties": null
+            },
+            "FolderIds": [
+              {
+                "@Type": "EWS2.ews.DistinguishedFolderIdType",
+                "Mailbox": null,
+                "Id": "inbox",
+                "ChangeKey": null
+              }
+            ]
+          }
+        }
+      },
+      "CreateItem": {
+        "Headers": {
+          "RequestServerVersionValue": {
+            "Version": "Exchange2010_SP1",
+            "AnyAttr": null
+          }
+        },
+        "Body": {
+          "CreateItem1": {
+            "SavedItemFolderId": {
+              "@Type": "EWS2.ews.TargetFolderIdType",
+              "Item": {
+                "@Type": "EWS2.ews.FolderIdType",
+                "Id": "AAMkADYxYzljYzI1LTk1YjUtNDg0YS1iNjI1LTBjN2I2Y2ZmYjcwYgAuAAAAAADWV5hy4wafRqYPPl1z7uSeAQBxgZ/CxfY0R6gZ64CJEHVVAAAAAAEMAAA=",
+                "ChangeKey": null
+              }
+            },
+            "Items": {
+              "Items": [
+                {
+                  "@Type": "EWS2.ews.MessageType",
+                  "Sender": null,
+                  "ToRecipients": [
+                    {
+                      "Name": "Leonard Hofstadter",
+                      "EmailAddress": "leonard@example.com",
+                      "RoutingType": null,
+                      "ItemId": null
+                    }
+                  ],
+                  "CcRecipients": null,
+                  "BccRecipients": null,
+                  "ConversationIndex": null,
+                  "ConversationTopic": null,
+                  "From": {
+                    "Item": {
+                      "Name": "Sheldon Cooper",
+                      "EmailAddress": "sheldon@example.com",
+                      "RoutingType": null,
+                      "ItemId": null
+                    }
+                  },
+                  "InternetMessageId": null,
+                  "References": null,
+                  "ReplyTo": null,
+                  "ReceivedBy": null,
+                  "ReceivedRepresenting": null,
+                  "MimeContent": null,
+                  "ItemId": null,
+                  "ParentFolderId": null,
+                  "ItemClass": null,
+                  "Subject": "Imported from Rapise",
+                  "Body": {
+                    "BodyType1": "HTML",
+                    "Value": "<h1>Hello World!</h1>"
+                  },
+                  "Attachments": null,
+                  "Categories": null,
+                  "InReplyTo": null,
+                  "InternetMessageHeaders": null,
+                  "ResponseObjects": null,
+                  "ReminderMinutesBeforeStart": null,
+                  "DisplayCc": null,
+                  "DisplayTo": null,
+                  "ExtendedProperty": [
+                    {
+                      "ExtendedFieldURI": {
+                        "PropertySetId": null,
+                        "PropertyTag": "3591",
+                        "PropertyName": null,
+                        "PropertyType": "Integer"
+                      },
+                      "Item": "1"
+                    }
+                  ],
+                  "Culture": null,
+                  "EffectiveRights": null,
+                  "LastModifiedName": null,
+                  "WebClientReadFormQueryString": null,
+                  "WebClientEditFormQueryString": null,
+                  "ConversationId": null,
+                  "UniqueBody": null
+                }
+              ]
+            },
+            "MessageDisposition": "SaveOnly",
+            "MessageDispositionSpecified": true
+          }
+        }
+      }
+    }
+  }
+}

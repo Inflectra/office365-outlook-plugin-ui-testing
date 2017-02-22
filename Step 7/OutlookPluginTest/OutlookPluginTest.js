@@ -1,7 +1,7 @@
 
 
 
-function Test()
+function Test(params)
 {
 	Global.DoLoadObjects('../PluginStateVerification/PluginStateVerification.objects.js');
 
@@ -15,7 +15,11 @@ function Test()
 	var tableView = SeS('Table_View');
 	if (Tester.Assert("Table View is present", tableView != null))
 	{
-		var textObject = tableView.DoFindByText("Imported from Rapise Email 1", 5);
+		var dataRowNum = Common_GetDataRowNum(params);
+		Spreadsheet.DoAttach('../../Data.xlsx');
+		var subject = Spreadsheet.GetCell("Subject", dataRowNum);
+	
+		var textObject = tableView.DoFindByText(subject, 5);
 		if (Tester.Assert("Text Object found", textObject != null))
 		{
 			var firstEmail = textObject.GetParent();
@@ -23,7 +27,7 @@ function Test()
 			{
 				firstEmail.DoClick();
 				SeS('TextMinerButton').DoClick();
-				Common_VerifyPluginParameterized();
+				Common_VerifyPluginParameterized(dataRowNum);
 			}
 		}
 	}

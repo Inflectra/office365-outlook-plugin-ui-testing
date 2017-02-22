@@ -12,3 +12,8 @@ function OnXPathNotFound(xpath)
 	var newXpath = parts[parts.length - 1];
 	return newXpath;
 }
+
+if (typeof(g_xpathNotFoundCallbacks) != "undefined")
+{
+	g_xpathNotFoundCallbacks.push(OnXPathNotFound);
+}

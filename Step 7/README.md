@@ -1,1 +1,1 @@
-Integration
+Integration: seed data and run tests in Outlook and IE.

@@ -1,0 +1,52 @@
+{
+	"WebServiceEWS": {
+		"actions": [
+			{
+				"name": "DoExecute",
+				"signature": "method, params, headers"
+			},
+			{
+				"name": "DoVerify",
+				"signature": "msg, jsonPath, expectedValue"
+			}
+		],
+		"properties": [
+			{
+				"name": "Credential",
+				"setsign": "value, value2",
+				"getsign": "",
+				"readonly": false
+			},
+			{
+				"name": "Url",
+				"setsign": "value",
+				"getsign": "",
+				"readonly": false
+			},
+			{
+				"name": "ResponseIsErrorStatus",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true
+			},
+			{
+				"name": "ResponseHeaders",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true
+			},
+			{
+				"name": "ResponseText",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true
+			},
+			{
+				"name": "ResponseObject",
+				"setsign": "",
+				"getsign": "jsonPath,info",
+				"readonly": true
+			}
+		]
+	}
+}
