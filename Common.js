@@ -5,8 +5,7 @@ g_savePlaybackScreenshotsAfterAction = false;
 function Common_GetParameter(name)
 {
 	var localParametersFileName = '../../LocalParameters.xlsx';
-	var fso = new ActiveXObject("Scripting.FileSystemObject"); 
-	if(fso.FileExists(localParametersFileName))
+	if(g_helper.FileExists(localParametersFileName))
 	{
 		Spreadsheet.DoAttach(localParametersFileName);
 	}

@@ -6,17 +6,11 @@ function RunTestCase(params)
 {
 	Global.DoInvokeTest('../DataSeeding/DataSeeding.sstest', params);
 		
-	g_browserLibrary = "Outlook";
-	SeSPrepareBrowserVariables();
+	Navigator.SelectBrowserProfile("Outlook");
 	Global.DoInvokeTest('../OutlookPluginTest/OutlookPluginTest.sstest', params);
-
-	g_ieNavigator.process = 0;
-	g_ieNavigator.path = null;
+	Navigator.Detach();
 	
-	g_browserLibrary = "Internet Explorer HTML";
-	SeSPrepareBrowserVariables();
+	Navigator.SelectBrowserProfile("Internet Explorer HTML");
 	Global.DoInvokeTest('../BrowserPluginTest/BrowserPluginTest.sstest', params);
-	
-	g_ieNavigator.process = 0;
-	g_ieNavigator.path = null;
+	Navigator.Detach();
 }
