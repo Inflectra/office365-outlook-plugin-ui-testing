@@ -204,7 +204,7 @@ var saved_script_objects={
 		"object_name": "BUTTON",
 		"object_library": "Internet Explorer HTML",
 		"window_name": "regex:Mail.*",
-		"xpath": "/html/body/div[3]/div/div[@id='primaryContainer']/div[@id='primaryHeaderView']/div/div[@id='O365_NavHeader']/div[@id='O365_TopMenu']/div/div/div[1]/div[14]/button",
+		"xpath": "//span[contains(@class,\"ms-Icon--person\")]",
 		"title": "Mail - Sheldon Cooper - Outlook",
 		"url": "https://outlook.office365.com/owa/"
 	},
@@ -230,7 +230,7 @@ var saved_script_objects={
 		"object_name": "Sign out",
 		"object_library": "Internet Explorer HTML",
 		"window_name": "regex:Mail.*",
-		"xpath": "//span[@aria-label='Sign out']",
+		"xpath": "//a[@id='O365_SubLink_ShellSignout']",
 		"title": "Mail - Sheldon Cooper - Outlook",
 		"url": "https://outlook.office.com/owa/"
 	},

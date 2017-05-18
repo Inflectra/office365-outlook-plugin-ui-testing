@@ -3,6 +3,11 @@
 
 function Test(params)
 {
+	if (typeof(params) == "undefined")
+	{
+		params = {dataRowNum: 1};
+	}
+	
 	Global.DoLoadObjects('../PluginStateVerification/PluginStateVerification.objects.js');
 
 	g_browserParams = "-private";

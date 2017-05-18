@@ -3,6 +3,12 @@
 
 function Test(params)
 {
+	if (typeof(params) == "undefined")
+	{
+		params = {dataRowNum: 1};
+	}
+
+
 	Global.DoLoadObjects('../PluginStateVerification/PluginStateVerification.objects.js');
 
 	var pid = Global.DoLaunch(g_browserExecutablePath, null, true);

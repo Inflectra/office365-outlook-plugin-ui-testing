@@ -39,8 +39,7 @@ function OpenMailbox()
 function SelectEmail(index)
 {
 	Tester.Message("Select Email");
-	var xpath = "//div[@id='_ariaId_24']";
-	xpath = xpath.replace("24", "" + (24 + index * 2));
+	var xpath = "(//div[@role='option'])[" + (index + 1) + "]";
 	SeS('EmailItem', {xpath:xpath}).DoMouseMove();
 	Global.DoClick();
 }
@@ -52,7 +51,7 @@ function LogoutFromMailbox()
 	SeS('USER').DoClick();
 	SeS('SIGNOUT').DoClick();
 	
-	var res = Global.DoWaitFor('You_signed_out_of_your_account');
+	var res = Global.DoWaitFor('You_signed_out_of_your_account', 30000);
 	Tester.Assert("Logout Complete", res);
 	if (res)
 	{
