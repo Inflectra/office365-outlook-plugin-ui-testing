@@ -13,6 +13,19 @@ This demo shows several important features of Rapise:
 - Shared code
 - Parameters and data in spreadsheets
 
+## Prerequisites
+To run the tests complete three simple steps:
+
+1. Sign up for Office 365 free trial using one of the links below:
+
+    - [Link 1](https://products.office.com/en/business/office-365-enterprise-e3-business-software)
+    - [Link 2](https://signup.microsoft.com/Signup?OfferId=B07A1127-DE83-4a6d-9F85-2C104BDAE8B4&dl=ENTERPRISEPACK&ali=1)
+
+2. Install TextMiner into Outlook.
+
+    - [TextMiner in Office Store](https://store.office.com/en-us/app.aspx?assetid=WA104380692)
+
+3. Enter Office 365 login credentials into Parameters.xlsx
 
 ## Demo Development Steps
 
