@@ -32,7 +32,7 @@ function OpenMailbox()
 {
 	Tester.Message("Open Mailbox");
 	SeS('Mail').DoClick();
-	Global.DoWaitFor('EnailItem');
+	Global.DoWaitFor('EmailItem');
 }
 
 /** @scenario SelectEmail*/

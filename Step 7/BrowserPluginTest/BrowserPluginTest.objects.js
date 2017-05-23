@@ -178,7 +178,7 @@ var saved_script_objects={
 		"object_name": "DIV",
 		"object_library": "Internet Explorer HTML",
 		"window_name": "regex:Mail.*",
-		"xpath": "//div[@id='_ariaId_24']",
+		"xpath": "(//div[@role='option'])[1]",
 		"title": "Mail - Sheldon Cooper - Outlook",
 		"url": "https://outlook.office365.com/owa/"
 	},
