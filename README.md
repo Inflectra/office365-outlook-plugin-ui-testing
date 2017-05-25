@@ -2,6 +2,9 @@
 
 The purpose of this sample is to show how to use Rapise to test complex systems that include web UI, desktop UI and remote server components. As application under test we use an Office 365 Outlook Plugin running in a browser (IE, FF, Chrome) and desktop Outlook for Windows. As a server part we use Exchange server accessible via EWS SOAP API.
 
+## Attention SQADAYS21 Attendees!
+Follow [the link](https://www.inflectra.com/SQADAYS21.aspx) to request your Rapise license for free. Offer expires June 9th, 2017.
+
 ## Rapise Features
 
 This demo shows several important features of Rapise:
@@ -49,6 +52,11 @@ Objects created on the previous step are used to verify plugin state in Outlook 
 
 ### Step 7: Integration
 All pieces if the puzzle gathered together.
+
+### Rapise in Action
+Click the image to view test execution on YouTube.
+
+[![Rapise Testing MS Outlook](http://img.youtube.com/vi/jnttJ39uK44/0.jpg)](http://www.youtube.com/watch?v=jnttJ39uK44 "Rapise Testing Microsoft Outlook")
 
 ### Test Diagram
 <img alt="Test Diagram" src="https://github.com/Inflectra/office365-outlook-plugin-ui-testing/blob/master/Media/Test%20Diagram.png" width="700"/>
