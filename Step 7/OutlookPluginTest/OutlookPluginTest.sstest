@@ -6,6 +6,7 @@
   <ReportPath>OutlookPluginTest.trp</ReportPath>
   <CommandInterval>1000</CommandInterval>
   <IterationsCount>1</IterationsCount>
+  <StopOnError>false</StopOnError>
   <CacheObjects>false</CacheObjects>
   <ObjectLookupAttempts>5</ObjectLookupAttempts>
   <ObjectLookupAttemptInterval>300</ObjectLookupAttemptInterval>
@@ -18,6 +19,7 @@
   <SaveScreenshotsCaptureCursor>true</SaveScreenshotsCaptureCursor>
   <CommandLine />
   <EntryPoint>Test</EntryPoint>
+  <WorkDir>.</WorkDir>
   <TestFiles>
     <Name>Test</Name>
     <IsFilterGroup>false</IsFilterGroup>
