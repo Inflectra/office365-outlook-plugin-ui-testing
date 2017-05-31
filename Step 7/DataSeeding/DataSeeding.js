@@ -3,6 +3,11 @@
 
 function Test(params)
 {
+	if (typeof(params) == "undefined")
+	{
+		params = {dataRowNum: 1};
+	}
+
 	var WebServiceEWS=SeS('WebServiceEWS');
 	
 	var userName = Common_GetParameter("UserName");
